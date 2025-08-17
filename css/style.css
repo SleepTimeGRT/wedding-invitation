@@ -1,0 +1,695 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.main-frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 200px;
+  padding: 150px 0px;
+  position: relative;
+  background-color: #f5f4ee;
+}
+
+.main-frame .welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 0px 11px;
+  position: relative;
+  align-self: stretch;
+  height: 100vh;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.main-frame .frame {
+  position: relative;
+  width: 369px;
+  height: 524px;
+}
+
+.main-frame .overlap-group {
+  position: relative;
+  height: 470px;
+  top: 10px;
+}
+
+.main-frame .mask-group {
+  position: absolute;
+  width: 369px;
+  height: 388px;
+  top: 38px;
+  left: 0;
+}
+
+.main-frame .hyunbin {
+  position: absolute;
+  width: 324px;
+  height: 88px;
+  top: 382px;
+  left: 23px;
+}
+
+.main-frame .minchul {
+  position: absolute;
+  width: 333px;
+  height: 83px;
+  top: 0;
+  left: 18px;
+}
+
+.main-frame .group {
+  position: relative;
+  width: 303.96px;
+  height: 91.66px;
+}
+
+.main-frame .overlap {
+  position: relative;
+  width: 300px;
+  height: 88px;
+  top: 2px;
+  left: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-frame .text-wrapper {
+  font-family: 'Beth Ellen',
+    cursive;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 37px;
+  white-space: nowrap;
+  background: url(../assets/welcome/bg_welcome_date.svg) no-repeat center;
+  background-size: contain;
+  width: 100%;
+  max-width: 80%;
+  padding: 20px 0;
+}
+
+.main-frame .invitation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.main-frame .div {
+  position: relative;
+  width: 90%;
+  max-width: 426px;
+  margin-top: -1.00px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "UhBee Se_hyun-Regular",
+    Helvetica;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  line-height: 37px;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+.main-frame .whenlocation {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 843.92px;
+}
+
+.main-frame .when {
+  position: absolute;
+  width: 413px;
+  height: 276px;
+  top: 0;
+  left: -23px;
+}
+
+.main-frame .overlap-group-2 {
+  position: relative;
+  height: 276px;
+}
+
+.main-frame .vector-wrapper {
+  position: absolute;
+  width: 413px;
+  height: 250px;
+  top: 26px;
+  left: 0;
+}
+
+.main-frame .vector {
+  position: absolute;
+  width: 387px;
+  height: 248px;
+  top: 0;
+  left: 23px;
+  aspect-ratio: 1.7;
+  object-fit: cover;
+}
+
+.main-frame .text-wrapper-2 {
+  position: absolute;
+  top: 38px;
+  left: 205px;
+  transform: rotate(5.04deg);
+  font-family: "UhBee Se_hyun-Regular",
+    Helvetica;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
+  white-space: nowrap;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+.main-frame .element {
+  position: absolute;
+  top: 120px;
+  left: 89px;
+  font-family: "Pretendard-Bold",
+    Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 31px;
+}
+
+.main-frame .span {
+  font-weight: 700;
+}
+
+.main-frame .text-wrapper-3 {
+  font-family: "Pretendard-Regular",
+    Helvetica;
+}
+
+.main-frame .img {
+  position: absolute;
+  width: 68px;
+  height: 66px;
+  top: 0;
+  left: 67px;
+  aspect-ratio: 1.03;
+  object-fit: cover;
+}
+
+.main-frame .location {
+  position: absolute;
+  width: 460px;
+  height: 448px;
+  top: 396px;
+  left: -27px;
+}
+
+.main-frame .overlap-2 {
+  position: relative;
+  height: 448px;
+}
+
+.main-frame .img-wrapper {
+  position: absolute;
+  width: 460px;
+  height: 412px;
+  top: 36px;
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.main-frame .vector-2 {
+  position: absolute;
+  width: 393px;
+  height: 399px;
+  top: 3px;
+  left: 40px;
+  transform: rotate(-180deg);
+  aspect-ratio: 1.12;
+  object-fit: cover;
+}
+
+.main-frame .text-wrapper-4 {
+  position: absolute;
+  top: 31px;
+  left: 102px;
+  transform: rotate(5.04deg);
+  font-family: "UhBee Se_hyun-Regular",
+    Helvetica;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
+  white-space: nowrap;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+.main-frame .p {
+  position: absolute;
+  top: 112px;
+  left: 68px;
+  font-family: "Pretendard-Bold",
+    Helvetica;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  line-height: 31px;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+.main-frame .text-wrapper-5 {
+  position: absolute;
+  top: 311px;
+  left: 117px;
+  font-family: "Pretendard-Bold",
+    Helvetica;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 31px;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+.main-frame .image {
+  position: absolute;
+  width: 113px;
+  height: 113px;
+  top: 0;
+  left: 279px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.main-frame .tl {
+  position: absolute;
+  width: 48px;
+  height: 94px;
+  top: 311px;
+  left: 48px;
+  background-image: url(./img/tl-15.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.main-frame .brideandgroom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 0px 44px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.main-frame .vector-3 {
+  position: relative;
+  width: 46.54px;
+  height: 40.03px;
+  aspect-ratio: 1.1;
+  object-fit: cover;
+}
+
+.main-frame .text-wrapper-6 {
+  position: relative;
+  width: fit-content;
+  font-family: "UhBee Se_hyun-Regular",
+    Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 25px;
+  letter-spacing: 0;
+  line-height: 35px;
+  white-space: nowrap;
+}
+
+.main-frame .mask-group-2 {
+  position: relative;
+  width: 269.64px;
+  height: 233.48px;
+}
+
+.main-frame .group-2 {
+  position: relative;
+  width: 302.72px;
+  height: 130.73px;
+}
+
+.main-frame .group-3 {
+  position: absolute;
+  width: 96px;
+  height: 123px;
+  top: 5px;
+  left: 0;
+}
+
+.main-frame .group-4 {
+  position: absolute;
+  width: 121px;
+  height: 131px;
+  top: 0;
+  left: 182px;
+}
+
+.main-frame .group-5 {
+  position: relative;
+  width: 312px;
+  height: 120px;
+  margin-right: -7.50px;
+}
+
+.main-frame .text-wrapper-7 {
+  position: absolute;
+  top: 0;
+  left: 43px;
+  transform: rotate(0.04deg);
+  font-family: "UhBee Se_hyun-Regular",
+    Helvetica;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
+  white-space: nowrap;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+.main-frame .text-wrapper-8 {
+  position: absolute;
+  top: 0;
+  left: 208px;
+  font-family: "UhBee Se_hyun-Regular",
+    Helvetica;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
+  white-space: nowrap;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+.main-frame .div-2 {
+  position: absolute;
+  top: 58px;
+  left: 163px;
+  font-family: "Pretendard-Regular",
+    Helvetica;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  line-height: 31px;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+.main-frame .text-wrapper-9 {
+  font-family: "Pretendard-Regular",
+    Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 31px;
+}
+
+.main-frame .text-wrapper-10 {
+  font-family: "Pretendard-Bold",
+    Helvetica;
+  font-weight: 700;
+}
+
+.main-frame .div-3 {
+  position: absolute;
+  top: 58px;
+  left: 0;
+  font-family: "Pretendard-Regular",
+    Helvetica;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  line-height: 31px;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+.main-frame .gallary {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: auto;
+}
+
+.main-frame .wishingwell {
+  display: flex;
+  flex-direction: column;
+  height: 655.9px;
+  align-items: center;
+  gap: 30px;
+  padding: 0px 60px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.main-frame .frame-2 {
+  display: flex;
+  flex-direction: column;
+  height: 86.9px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.main-frame .vector-4 {
+  position: relative;
+  width: 47.89px;
+  height: 47px;
+  aspect-ratio: 0.99;
+  object-fit: cover;
+}
+
+.main-frame .text-wrapper-11 {
+  position: relative;
+  align-self: stretch;
+  font-family: "UhBee Se_hyun-Regular",
+    Helvetica;
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+  line-height: 45px;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+.main-frame .frame-3 {
+  position: relative;
+  flex: 1;
+  width: 393px;
+  flex-grow: 1;
+  margin-left: -60.00px;
+  margin-right: -60.00px;
+  background-image: url(./img/image.svg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.main-frame .text-wrapper-12 {
+  position: absolute;
+  top: 61px;
+  left: 55px;
+  font-family: "Pretendard-Regular",
+    Helvetica;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  line-height: 31px;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+.main-frame .element-2 {
+  position: absolute;
+  top: 263px;
+  left: 80px;
+  font-family: "Pretendard-Bold",
+    Helvetica;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  line-height: 31px;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+.main-frame .element-3 {
+  position: absolute;
+  width: 273px;
+  top: 351px;
+  left: 60px;
+  font-family: "Pretendard-Bold",
+    Helvetica;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  line-height: 31px;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+.main-frame .faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  padding: 0px 43px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.main-frame .text-wrapper-13 {
+  position: relative;
+  width: fit-content;
+  font-family: "UhBee Se_hyun-Regular",
+    Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 35px;
+}
+
+.main-frame .q {
+  position: relative;
+  width: 229px;
+  font-family: "UhBee Se_hyun-Regular",
+    Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: 35px;
+}
+
+.main-frame .frame-4 {
+  position: absolute;
+  width: 151px;
+  height: 268px;
+  top: 1218px;
+  left: 55px;
+}
+
+.main-frame .text-wrapper-14 {
+  position: absolute;
+  top: 88px;
+  left: 0;
+  font-family: "UhBee Se_hyun-Regular",
+    Helvetica;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
+  white-space: nowrap;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+.main-frame .element-4 {
+  position: absolute;
+  top: 174px;
+  left: 15px;
+  font-family: "Pretendard-Regular",
+    Helvetica;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  line-height: 31px;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+.main-frame .tl-2 {
+  position: absolute;
+  width: 137px;
+  height: 56px;
+  top: 0;
+  left: 7px;
+  background-image: url(./img/tl-27.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* Original CSS code should be injected here */
+
+/* Additional semantic improvements */
+.gallery-section {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+/* Accessibility improvements */
+.text-wrapper[datetime],
+time {
+  font-family: "Beth Ellen",
+    Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 37px;
+  white-space: nowrap;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Focus states for better accessibility */
+img:focus {
+  outline: 2px solid #4a90e2;
+  outline-offset: 2px;
+}
+
+/* Screen reader improvements */
+[role="img"] {
+  display: block;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  /* Tablet styles here */
+}
+
+@media (min-width: 1024px) {
+  /* Desktop styles here */
+}
