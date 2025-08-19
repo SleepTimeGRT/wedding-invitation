@@ -61,12 +61,18 @@
                     <p><span class="date">2025년 11월 8일 토요일 오전 11시</span><br><span class="church">분당 만나교회 시온성전(2F)<br>경기도
                             성남시 분당구 양현로 353</span>
                     </p>
-                    <button type="button" class="calendar-btn"
-                        style="margin-top: 16px; padding: 8px 16px; font-size: 14px; cursor: pointer; border: none; background: rgba(255, 255, 255, 0.9); border-radius: 6px; display: flex; align-items: center; gap: 8px;"
-                        onclick="addToGoogleCalendar()">
-                        <span class="material-icons" style="font-size: 16px;">event</span>
-                        캘린더에 추가
-                    </button>
+                    <div class="location__calendar_buttons">
+                        <button type="button" class="calendar-btn"
+                            onclick="addToNaverCalendar()">
+                            <img src="./assets/icon_naver_calendar.webp" alt="Naver Map"
+                                style="width: 48px; height: 48px;">
+                        </button>
+                        <button type="button" class="calendar-btn"
+                            onclick="addToGoogleCalendar()">
+                            <img src="./assets/icon_google_calendar.png" alt="Google Calendar"
+                                style="width: 48px; height: 48px;">
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="location__direction">

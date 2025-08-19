@@ -102,6 +102,14 @@
   align-content: center;
 }
 
+.location__calendar_buttons {
+  width: fit-content;
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+  margin-right: 64px;
+}
+
 .location__direction {
   width: 100%;
   height: auto;
@@ -568,4 +576,13 @@
 
 .toast.show {
   opacity: 1;
+}
+
+.calendar-btn {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
