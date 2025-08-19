@@ -1,0 +1,20 @@
+location section 에 대한 요구사항.
+column 형식에 100% width 아이템 간격은 80px.
+순서는 "where and location", "direction" 순서로 있어.
+
+where and location 에 대한 요구사항.
+- 이미지는 assets 폴더에 있는 image_location_where.png 이미지를 사용해.
+- "2025년 11월 8일 토요일 오전 11시" 텍스트를 추가해.
+
+direction 에 대한 요구사항.
+- 이미지는 assets 폴더에 있는 image_location_direction.png 이미지를 사용해.
+- "자차로 오신다면
+성남시청 공용 주차장 (무료) 이용 후 → 도보 약 7분
+
+대중교통으로 오신다면
+수인분당선 야탑역 (4번 출구) → 도보 약 15분"
+
+direction 하단에 caution을 추가해야해.
+- image_caution.png 이미지를 사용해.
+- "교회 주차장이 매우 협소해서
+꼭! 성남시청 주차장을 이용해주세요!"

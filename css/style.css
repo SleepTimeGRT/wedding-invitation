@@ -50,6 +50,107 @@
   white-space: nowrap;
 }
 
+.invitation {
+  padding: 0;
+}
+
+.invitation__text {
+  color: #000;
+  text-align: center;
+  font-family: "UhBee Se_hyun";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37px;
+  /* 231.25% */
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 0;
+}
+
+.location p {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000;
+}
+
+.location__where .date {
+  font-weight: 700;
+}
+
+.location__where .church {
+  font-weight: 400;
+}
+
+.location__where {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: inline-block;
+}
+
+.location__where-text {
+  width: 100%;
+  position: absolute;
+  top: 35%;
+  text-align: center;
+  align-content: center;
+}
+
+.location__direction {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: inline-block;
+}
+
+.location__direction-content {
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0%;
+}
+
+.location__direction-text {
+  width: 100%;
+  margin-top: 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.location__direction .accent {
+  font-weight: 700;
+}
+
+.location__direction-content-car {
+  position: absolute;
+  top: -8%;
+  right: 6%;
+}
+
+.location__caution {
+  width: 100%;
+  text-align: start;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-weight: 700;
+  margin-left: 8%;
+  margin-top: 32px;
+}
+
+.location img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 .gallery {
   display: flex;
