@@ -1,0 +1,100 @@
+You are an expert front-end developer specializing in creating responsive, mobile-first static websites with clean HTML and CSS.
+
+Your task is to generate the code for a static wedding invitation webpage based on the detailed specifications below.
+
+### 1. Core Requirements & Global Styles
+
+**A. Responsiveness & Layout:**
+- The design is **mobile-first**.
+- keep og tags in index.html.
+- publish url : https://hyunbin.love.minchulkim.kr
+- The main content container must adhere to the following rules:
+  - On **mobile devices** (viewport width <= 430px), the container must fill **100% of the width**.
+  - On **tablet and desktop devices** (viewport width > 430px), the container must have a **fixed maximum width of 430px** and be centered horizontally.
+  - The empty space on the sides (for screens > 430px) should be a "letterbox" area with a neutral background color, for example, `#EAEAEA`.
+
+**B. Technology Stack:**
+- **HTML5**: Use semantic tags like `<main>`, `<section>`, `<footer>`, etc.
+- **CSS3**: All styling should be modern and clean.
+- **CSS Framework**: Use `global.css`, `style.css` file. Do not use external CSS frameworks. All styles must be custom-written.
+- **JavaScript**: Only use it if absolutely necessary. For image lazy loading, prefer the native HTML `loading="lazy"` attribute.
+
+### 2. Page Structure & Section Breakdown
+
+The webpage will eventually have 8 sections. For this initial task, please **fully implement the "Welcome" and "Gallery" sections** and create placeholders for the others.
+
+---
+
+#### **Section 1: Welcome (Implement Fully)**
+
+- **Objective:** Create a full-screen hero section.
+- **Layout & Sizing:**
+  - The section must occupy the full viewport height (`height: 100vh`).
+  - Use Flexbox or Grid for precise content alignment.
+- **Assets & Positioning:**
+  - The image `bg_welcome_date.jpg` must be positioned at the **bottom** of the section.
+  - The image `image_welcome_hero.jpg` must be centered horizontally and vertically in the remaining space **above** `bg_welcome_date.jpg`.
+  - wedding date "2025-11-08 11am" must be positioned at the center of `bg_welcome_date`
+
+---
+
+#### **Section 2: Invitation (Placeholder)**
+
+- Create an empty `<section>` with `id="invitation"`.
+- Add an HTML comment inside: ``.
+
+---
+
+#### **Section 3: When and Location (Placeholder)**
+
+- Create an empty `<section>` with `id="location"`.
+- Add an HTML comment inside: ``.
+
+---
+
+#### **Section 4: Bride and Groom (Placeholder)**
+
+- Create an empty `<section>` with `id="bride-and-groom"`.
+- Add an HTML comment inside: ``.
+
+---
+
+#### **Section 5: Gallery (Implement Fully)**
+
+- **Objective:** Display a photo gallery with lazy loading.
+- **Content:**
+  - This section should be designed to display images from a `gallery/` folder.
+  - `gallery/photo1.webp`, `gallery/photo2.webp`, etc. (at least 6 images).
+- **Layout:**
+  - use `gallary/hero.webp` for section's hero image.
+  - Gallery images must be placed one at a time in the new direction column.
+- **Functionality:**
+  - Implement **native browser lazy loading** for all images in this gallery by adding the `loading="lazy"` attribute to each `<img>` tag.
+  - Ensure each image has a descriptive `alt` attribute, like `alt="Gallery photo 1"`.
+
+---
+
+#### **Section 6: Wishing Well (Placeholder)**
+
+- Create an empty `<section>` with `id="wishing-well"`.
+- Add an HTML comment inside: ``.
+
+---
+
+#### **Section 7: FAQ (Placeholder)**
+
+- Create an empty `<section>` with `id="faq"`.
+- Add an HTML comment inside: ``.
+
+---
+
+#### **Section 8: Thanks (Placeholder)**
+
+- Create an empty `<section>` with `id="thanks"`.
+- Add an HTML comment inside: ``.
+
+### 3. Final Output Instructions
+
+- Provide the complete code in a **single `index.html` and css files**.
+- Place all CSS rules inside a `<style>` tag within the `<head>` of the document.
+- Add HTML comments (``) before each `<section>` to clearly delineate the different parts of the page.

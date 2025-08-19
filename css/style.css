@@ -1,616 +1,72 @@
-@import url("https://db.onlinewebfonts.com/c/b70e7c042deeed25b01dc2c293227b3a?family=UhBee+Se_hyun");
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+.welcome {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 
-.default {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 120px;
-    padding: 0px 0px 200px;
-    position: relative;
-    background-color: #f5f4ee;
-  }
-  
-  .default .welcome {
-    display: flex;
-    flex-direction: column;
-    height: 795px;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 0px 40px;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-  }
-  
-  .default .hero-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    flex: 1;
-    align-self: stretch;
-    width: 100%;
-    flex-grow: 1;
-  }
-  
-  .default .hero-image {
-    position: relative;
-    width: 370px;
-    height: 473px;
-    aspect-ratio: 0.78;
-  }
-  
-  .default .date-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 32px;
-    flex: 0 0 auto;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-  }
-  
-  .default .date {
-    margin-right: -2.00px;
-    aspect-ratio: 3.43;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-  }
-  
-  .default .overlap-group {
-    position: relative;
-    width: 330px;
-    height: 96px;
-    background-image: url(./img/bg-welcome-date-2.svg);
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-  
-  .default .text-wrapper {
-    position: absolute;
-    width: 214px;
-    top: 26px;
-    left: 71px;
-    font-family: "Beth Ellen-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 20px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 37px;
-    white-space: nowrap;
-  }
-  
-  .default .invitation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-    flex: 0 0 auto;
-  }
-  
-  .default .div {
-    position: relative;
-    width: 426px;
-    margin-top: -1.00px;
-    margin-left: -16.50px;
-    margin-right: -16.50px;
-    font-family: "UhBee Se_hyun-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 16px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 37px;
-  }
-  
-  .default .whenlocation {
-    display: flex;
-    flex-direction: column;
-    height: 795px;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-  }
-  
-  .default .when {
-    position: relative;
-    width: 393px;
-    height: 276.16px;
-  }
-  
-  .default .location {
-    position: relative;
-    width: 393px;
-    height: 448px;
-    aspect-ratio: 1.03;
-  }
-  
-  .default .brideandgroom {
-    display: flex;
-    flex-direction: column;
-    height: 795px;
-    align-items: center;
-    gap: 32px;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-  }
-  
-  .default .icon-bag-head {
-    position: relative;
-    width: 46.54px;
-    height: 40.03px;
-    object-fit: cover;
-  }
-  
-  .default .text-wrapper-2 {
-    position: relative;
-    width: fit-content;
-    font-family: "UhBee Se_hyun-Regular", Helvetica;
-    font-size: 25px;
-    line-height: 35px;
-    white-space: nowrap;
-    font-weight: 400;
-    color: #000000;
-    letter-spacing: 0;
-  }
-  
-  .default .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-    flex: 0 0 auto;
-  }
-  
-  .default .hero-bag {
-    position: relative;
-    width: 270px;
-    height: 234px;
-    aspect-ratio: 1.16;
-  }
-  
-  .default .description {
-    display: flex;
-    height: 264px;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 0px 40px;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-  }
-  
-  .default .bride {
-    display: inline-flex;
-    flex-direction: column;
-    height: 264px;
-    align-items: center;
-    justify-content: space-between;
-    padding: 4px 0px 0px;
-    position: relative;
-    flex: 0 0 auto;
-  }
-  
-  .default .group {
-    position: relative;
-    width: 96.28px;
-    height: 123.42px;
-  }
-  
-  .default .frame {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 22px;
-    position: relative;
-    flex: 0 0 auto;
-  }
-  
-  .default .text-wrapper-3 {
-    position: relative;
-    width: fit-content;
-    margin-top: -0.99px;
-    transform: rotate(0.04deg);
-    font-family: "UhBee Se_hyun-Regular", Helvetica;
-    font-size: 25px;
-    line-height: 35px;
-    white-space: nowrap;
-    font-weight: 400;
-    color: #000000;
-    letter-spacing: 0;
-  }
-  
-  .default .p {
-    position: relative;
-    width: fit-content;
-    font-family: "Pretendard-Regular", Helvetica;
-    font-size: 16px;
-    text-align: center;
-    line-height: 31px;
-    font-weight: 400;
-    color: #000000;
-    letter-spacing: 0;
-  }
-  
-  .default .span {
-    font-family: "Pretendard-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 16px;
-    letter-spacing: 0;
-    line-height: 31px;
-  }
-  
-  .default .text-wrapper-4 {
-    font-family: "Pretendard-Bold", Helvetica;
-    font-weight: 700;
-  }
-  
-  .default .groom {
-    display: inline-flex;
-    flex-direction: column;
-    height: 264px;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    flex: 0 0 auto;
-  }
-  
-  .default .img {
-    position: relative;
-    width: 120.72px;
-    height: 130.73px;
-  }
-  
-  .default .text-wrapper-5 {
-    position: relative;
-    width: fit-content;
-    margin-top: -1.00px;
-    font-family: "UhBee Se_hyun-Regular", Helvetica;
-    font-size: 25px;
-    line-height: 35px;
-    white-space: nowrap;
-    font-weight: 400;
-    color: #000000;
-    letter-spacing: 0;
-  }
-  
-  .default .gallary {
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-    height: 3560px;
-  }
-  
-  .default .wishingwell {
-    display: flex;
-    flex-direction: column;
-    height: 655.9px;
-    align-items: center;
-    gap: 32px;
-    padding: 0px 60px;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-  }
-  
-  .default .img-2 {
-    position: relative;
-    width: 47.89px;
-    height: 47px;
-    object-fit: cover;
-  }
-  
-  .default .text-wrapper-6 {
-    position: relative;
-    align-self: stretch;
-    font-family: "UhBee Se_hyun-Regular", Helvetica;
-    font-size: 25px;
-    text-align: center;
-    line-height: 45px;
-    font-weight: 400;
-    color: #000000;
-    letter-spacing: 0;
-  }
-  
-  .default .overlap-group-wrapper {
-    position: relative;
-    flex: 1;
-    width: 393px;
-    flex-grow: 1;
-    margin-left: -60.00px;
-    margin-right: -60.00px;
-  }
-  
-  .default .overlap-group-2 {
-    position: relative;
-    height: 471px;
-    top: 15px;
-    background-image: url(./img/image.svg);
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-  
-  .default .text-wrapper-7 {
-    position: absolute;
-    top: 46px;
-    left: 55px;
-    font-family: "Pretendard-Regular", Helvetica;
-    font-size: 16px;
-    text-align: center;
-    line-height: 31px;
-    font-weight: 400;
-    color: #000000;
-    letter-spacing: 0;
-  }
-  
-  .default .element {
-    position: absolute;
-    top: 248px;
-    left: 96px;
-    font-family: "Pretendard Variable-Bold", Helvetica;
-    font-size: 16px;
-    text-align: center;
-    line-height: 31px;
-    font-weight: 400;
-    color: #000000;
-    letter-spacing: 0;
-  }
-  
-  .default .text-wrapper-8 {
-    font-weight: 700;
-  }
-  
-  .default .text-wrapper-9 {
-    font-family: "Pretendard Variable-Regular", Helvetica;
-  }
-  
-  .default .element-2 {
-    position: absolute;
-    width: 273px;
-    top: 336px;
-    left: 60px;
-    font-family: "Pretendard-Bold", Helvetica;
-    font-size: 16px;
-    text-align: center;
-    line-height: 31px;
-    font-weight: 400;
-    color: #000000;
-    letter-spacing: 0;
-  }
-  
-  .default .text-wrapper-10 {
-    font-family: "Pretendard-Regular", Helvetica;
-  }
-  
-  .default .faq {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-    flex: 0 0 auto;
-    overflow: hidden;
-  }
-  
-  .default .text-wrapper-11 {
-    position: relative;
-    width: fit-content;
-    font-family: "Beth Ellen-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 25px;
-    letter-spacing: 0;
-    line-height: 35px;
-    white-space: nowrap;
-  }
-  
-  .default .content-2 {
-    display: flex;
-    flex-direction: column;
-    width: 393px;
-    align-items: center;
-    gap: 48px;
-    padding: 22px 45px;
-    position: relative;
-    flex: 0 0 auto;
-  }
-  
-  .default .faq-2 {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    position: relative;
-    flex: 0 0 auto;
-    margin-left: -45.00px;
-    margin-right: -45.00px;
-  }
-  
-  .default .question {
-    position: relative;
-    width: 393px;
-    height: 140px;
-    aspect-ratio: 2.81;
-  }
-  
-  .default .text-wrapper-12 {
-    position: relative;
-    width: fit-content;
-    font-family: "UhBee Se_hyun-Regular", Helvetica;
-    font-size: 15px;
-    line-height: 35px;
-    font-weight: 400;
-    color: #000000;
-    letter-spacing: 0;
-  }
-  
-  .default .question-2 {
-    position: relative;
-    width: 393px;
-    height: 140px;
-  }
-  
-  .default .foot {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 32px;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-    flex: 0 0 auto;
-  }
-  
-  .default .bg-welcome-date {
-    position: relative;
-    width: 300.2px;
-    height: 87.81px;
-    object-fit: cover;
-  }
-  
-  .default .element-3 {
-    position: relative;
-    width: 426px;
-    margin-left: -16.50px;
-    margin-right: -16.50px;
-    font-family: "Pretendard Variable-Regular", Helvetica;
-    font-size: 16px;
-    text-align: center;
-    line-height: 37px;
-    font-weight: 400;
-    color: #000000;
-    letter-spacing: 0;
-  }
-  /* Original CSS code should be injected here */
-  
-  .gallery-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-  }
-  
-  .account-info {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    position: relative;
-  }
-  
-  /* Accessibility improvements */
-  .default h2,
-  .default h3 {
-    font-weight: inherit;
-    font-size: inherit;
-    margin: 0;
-  }
-  
-  /* Focus styles for better accessibility */
-  .default img:focus {
-    outline: 2px solid #4a90e2;
-    outline-offset: 2px;
-  }
-  
-  /* Improved semantic structure without changing visual appearance */
-  .default main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 120px;
-    padding: 0px 0px 200px;
-    position: relative;
-    background-color: #f5f4ee;
-  }
-  
-  .default header {
-    display: flex;
-    flex-direction: column;
-    height: 795px;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 0px 40px;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-  }
-  
-  .default section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-  }
-  
-  .default footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 32px;
-    position: relative;
-    align-self: stretch;
-    width: 100%;
-    flex: 0 0 auto;
-  }
-  
-  .default article {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    flex: 0 0 auto;
-  }
-  
-  .default blockquote {
-    position: relative;
-    width: 426px;
-    margin-left: -16.50px;
-    margin-right: -16.50px;
-    font-family: "Pretendard Variable-Regular", Helvetica;
-    font-size: 16px;
-    text-align: center;
-    line-height: 37px;
-    font-weight: 400;
-    color: #000000;
-    letter-spacing: 0;
-  }
-  
-  .default time {
-    position: absolute;
-    width: 214px;
-    top: 26px;
-    left: 71px;
-    font-family: "Beth Ellen-Regular", Helvetica;
-    font-weight: 400;
-    color: #000000;
-    font-size: 20px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: 37px;
-    white-space: nowrap;
-  }
-  
+.welcome__hero {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome__hero img {
+  max-width: 100%;
+  height: auto;
+}
+
+.welcome__date {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  background-image: url('../assets/bg_welcome_date.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+}
+
+.welcome__date img {
+  display: block;
+  width: 100%;
+}
+
+.welcome__date-text {
+  color: #000;
+  text-align: center;
+  font-family: "Beth Ellen";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37px; /* 185% */
+  white-space: nowrap;
+}
+
+.gallery {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.gallery h2 {
+  font-family: 'UhBee Se_hyun', sans-serif;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.gallery__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 10px;
+}
+
+.gallery__image {
+  width: 100%;
+  height: auto;
+  display: block;
+}

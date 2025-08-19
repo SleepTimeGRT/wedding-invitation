@@ -1,0 +1,12 @@
+body {
+  background-color: #EAEAEA;
+  margin: 0;
+  font-family: 'Pretendard', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  background-color: #F6F4EE;
+}
