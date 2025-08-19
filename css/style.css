@@ -73,7 +73,7 @@
 }
 
 .location p {
-  font-family: 'Pretendard', sans-serif;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-size: 16px;
   line-height: 1.6;
 
@@ -547,7 +547,7 @@
   color: white;
   padding: 12px 24px;
   border-radius: 8px;
-  font-family: 'Pretendard', sans-serif;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-size: 14px;
   z-index: 1000;
   opacity: 0;
