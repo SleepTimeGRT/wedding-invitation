@@ -194,6 +194,10 @@
   height: auto;
   display: block;
   margin: 0 auto;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .bride-and-groom__contents {
@@ -339,6 +343,80 @@
   align-self: flex-end;
   z-index: 0;
 }
+
+.wishing-well {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+
+.wishing-well__head {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wishing-well__head img {
+  width: 47.387px;
+  height: 46.504px;
+  flex-shrink: 0;
+}
+
+
+.wishing-well__title p {
+  font-size: 25px;
+  font-family: "UhBee Se_hyun";
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.wishing-well__contents {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.wishing-well__contents img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.wishing-well__contents-text {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  top: 56px;
+  gap: 32px;
+  left: 0;
+  z-index: 1;
+}
+
+.wishing-well__contents-text-item {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.wishing-well .accent {
+  font-weight: 700;
+}
+
 
 .faq {
   width: 100%;
