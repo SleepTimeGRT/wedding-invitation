@@ -1,0 +1,32 @@
+You are an expert front-end developer specializing in creating visually rich layouts using modern HTML and CSS. Your task is to generate the code for a webpage "Gallery" section based on the following specifications.
+
+### 1. Global Layout Rule
+
+- **Inter-Section Spacing:** All top-level sections on the page must have a vertical gap of `120px` between them. Please apply `margin-bottom: 120px;` to the main gallery section container.
+
+### 2. Gallery Section Breakdown
+
+The gallery section consists of three distinct parts: a `head`, a `hero-image`, and the `contents`.
+
+#### A. Section Head
+- **Height:** The head must have a fixed height of `80px`.
+- **Content:** It contains one image: `icon_gallary.png`.
+- **Alignment:** This icon must be perfectly centered, both horizontally and vertically, within its container.
+
+#### B. Hero Image
+- **Layout:** This is a full-width image container.
+- **Image Source:** Use the image located at `gallary/hero.webp`.
+- **Sizing:** The image should span 100% of the container's width while maintaining its aspect ratio.
+
+#### C. Contents (The Photo Column Layout)
+- **Objective:** Create a dynamic, column-based photo layout where images can slightly overlap to create a collage effect.
+- **Layout Style:** This is not a simple, rigid grid. It should be a multi-column layout. To achieve the desired visual effect, some images should slightly overlap adjacent images using negative margins or CSS transforms.
+- **Column Gap:** The primary space between items in the columns should be `30px`.
+- **Image Sources:** This area contains 8 images: `gallary/photo1.webp`, `gallary/photo2.webp`, ..., `gallary/photo8.webp`.
+
+### 3. Final Output Instructions
+
+- **Format:** Provide the complete code in a single `index.html` file.
+- **CSS:** Include all CSS within a `<style>` tag in the `<head>` of the document.
+- **Clarity:** Use a clear and maintainable class naming convention like BEM (e.g., `.gallery`, `.gallery__head`, `.gallery__contents`, `.gallery__item`).
+- **Comments:** Add HTML comments to denote the start of the gallery section and its primary components (`head`, `hero-image`, `contents`).
