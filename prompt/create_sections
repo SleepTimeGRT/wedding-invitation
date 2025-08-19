@@ -66,7 +66,7 @@ The webpage will eventually have 8 sections. For this initial task, please **ful
   - This section should be designed to display images from a `gallery/` folder.
   - `gallery/photo1.webp`, `gallery/photo2.webp`, etc. (at least 6 images).
 - **Layout:**
-  - use `gallary/hero.webp` for section's hero image.
+  - use `gallery/hero.webp` for section's hero image.
   - Gallery images must be placed one at a time in the new direction column.
 - **Functionality:**
   - Implement **native browser lazy loading** for all images in this gallery by adding the `loading="lazy"` attribute to each `<img>` tag.

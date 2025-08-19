@@ -10,19 +10,19 @@ The gallery section consists of three distinct parts: a `head`, a `hero-image`, 
 
 #### A. Section Head
 - **Height:** The head must have a fixed height of `80px`.
-- **Content:** It contains one image: `icon_gallary.png`.
+- **Content:** It contains one image: `icon_gallery.png`.
 - **Alignment:** This icon must be perfectly centered, both horizontally and vertically, within its container.
 
 #### B. Hero Image
 - **Layout:** This is a full-width image container.
-- **Image Source:** Use the image located at `gallary/hero.webp`.
+- **Image Source:** Use the image located at `gallery/hero.webp`.
 - **Sizing:** The image should span 100% of the container's width while maintaining its aspect ratio.
 
 #### C. Contents (The Photo Column Layout)
 - **Objective:** Create a dynamic, column-based photo layout where images can slightly overlap to create a collage effect.
 - **Layout Style:** This is not a simple, rigid grid. It should be a multi-column layout. To achieve the desired visual effect, some images should slightly overlap adjacent images using negative margins or CSS transforms.
 - **Column Gap:** The primary space between items in the columns should be `30px`.
-- **Image Sources:** This area contains 8 images: `gallary/photo1.webp`, `gallary/photo2.webp`, ..., `gallary/photo8.webp`.
+- **Image Sources:** This area contains 8 images: `gallery/photo1.webp`, `gallery/photo2.webp`, ..., `gallery/photo8.webp`.
 
 ### 3. Final Output Instructions
 
