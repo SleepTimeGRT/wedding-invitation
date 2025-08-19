@@ -364,6 +364,9 @@
   gap: 24px;
 }
 
+.wishing-well .accent {
+  font-weight: 700;
+}
 
 .wishing-well__head {
   height: 80px;
@@ -413,7 +416,7 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  top: 56px;
+  top: 64px;
   gap: 48px;
   left: 0;
 }
@@ -436,6 +439,7 @@
   flex-direction: column;
   gap: 24px;
   padding: 0;
+  width: 100%;
   margin: 0;
 }
 
@@ -443,19 +447,22 @@
   font-weight: 700;
 }
 
+
+.wishing-well__contents-text-item-account-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 11%;
+  margin-right: 11%;
+}
+
 .wishing-well__contents-text-item-account {
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-.wishing-well__contents-text-item-account-container {
-  display: flex;
-  flex-direction: column;
-
-}
 
 .faq {
   width: 100%;
