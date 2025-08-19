@@ -1,7 +1,7 @@
 .welcome {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100dvh;
 }
 
 .welcome__hero {
@@ -12,13 +12,15 @@
 }
 
 .welcome__hero img {
-  max-width: 100%;
+  width: 91%;
+  margin-left: 16px;
+  margin-right: 16px;
   height: auto;
 }
 
 .welcome__date {
   position: relative;
-  width: 80%;
+  width: 83%;
   margin: 0 auto;
   margin-bottom: 40px;
   background-image: url('../assets/bg_welcome_date.png');
