@@ -58,7 +58,8 @@
             <div class="location__where">
                 <img src="./assets/bg_where_and_location.png" alt="where and location">
                 <div class="location__where-text">
-                    <p><span class="date">2025년 11월 8일 토요일 오전 11시</span><br><span class="church">분당 만나교회 시온성전(2F)<br>경기도 성남시 분당구 양현로 353</span>
+                    <p><span class="date">2025년 11월 8일 토요일 오전 11시</span><br><span class="church">분당 만나교회 시온성전(2F)<br>경기도
+                            성남시 분당구 양현로 353</span>
                     </p>
                     <button type="button" class="calendar-btn"
                         style="margin-top: 16px; padding: 8px 16px; font-size: 14px; cursor: pointer; border: none; background: rgba(255, 255, 255, 0.9); border-radius: 6px; display: flex; align-items: center; gap: 8px;"
@@ -255,16 +256,16 @@
             });
         }
 
-                function showToast(message) {
+        function showToast(message) {
             const toast = document.getElementById('toast');
             toast.textContent = message;
             toast.classList.add('show');
-            
+
             setTimeout(() => {
                 toast.classList.remove('show');
             }, 2000);
         }
-        
+
         function addToGoogleCalendar() {
             const event = {
                 text: '민철 ❤️ 현빈 결혼식',
@@ -272,9 +273,9 @@
                 details: '분당 만나교회 시온성전(2F)\n경기도 성남시 분당구 양현로 353\n\n자차로 오신다면 성남시청 공용 주차장(무료) 이용 후 도보 약 7분 \n* 교회 주차장이 매우 협소해서 꼭! 성남시청 주차장을 이용해주세요!\n\n대중교통으로 오신다면 수인분당선 야탑역 (4번 출구)에서 도보 약 15분',
                 location: '분당 만나교회 시온성전(2F), 경기도 성남시 분당구 양현로 353'
             };
-            
+
             const url = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(event.text)}&dates=${event.dates}&details=${encodeURIComponent(event.details)}&location=${encodeURIComponent(event.location)}`;
-            
+
             window.open(url, '_blank');
         }
     </script>
