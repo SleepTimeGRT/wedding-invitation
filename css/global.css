@@ -9,4 +9,7 @@ body {
   max-width: 430px;
   margin: 0 auto;
   background-color: #F6F4EE;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
 }

@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  margin-bottom: 120px;
 }
 
 .welcome__hero {
@@ -50,7 +49,9 @@
 
 
 .gallery {
-  margin-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .gallery__head {
@@ -58,6 +59,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.gallery__head img {
+  width: 47.387px;
+  height: 46.504px;
+  flex-shrink: 0;
 }
 
 .gallery__hero-image img {
@@ -68,7 +75,6 @@
 .gallery__contents {
   column-count: 2;
   column-gap: 30px;
-  padding: 0 20px;
 }
 
 .gallery__contents .gallery__item {
