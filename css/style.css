@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "UhBee Se_hyun";
+  /* /fonts/ 폴더에 폰트를 업로드했다고 가정 */
+  src: url("../assets/UhBeeSe_hyun.woff") format("woff");
+}
+
 .welcome {
   display: flex;
   flex-direction: column;
