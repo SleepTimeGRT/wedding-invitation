@@ -18,6 +18,7 @@
     <link rel="stylesheet" as="style" crossorigin
         href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
     <link href="https://db.onlinewebfonts.com/c/b70e7c042deeed25b01dc2c293227b3a?family=UhBee+Se_hyun" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="./css/global.css" rel="stylesheet" />
     <link href="./css/style.css" rel="stylesheet" />
 </head>
@@ -25,7 +26,7 @@
 <body>
     <div class="container">
         <!-- Section 1: Welcome -->
-        <section id="welcome" class="welcome">
+        <section class="welcome">
             <div class="welcome__hero">
                 <img src="./assets/image_welcome_hero.png" alt="Welcome Image">
             </div>
@@ -35,7 +36,7 @@
         </section>
 
         <!-- Section 2: Invitation -->
-        <section id="invitation" class="invitation">
+        <section class="invitation">
             <div class="invitation__text">
                 각자의 색으로 빛나던 저희는<br>
                 서로 다른 조각이었습니다.<br><br>
@@ -53,7 +54,7 @@
         </section>
 
         <!-- Section 3: When and Location -->
-        <section id="location" class="location">
+        <section class="location">
             <div class="location__where">
                 <img src="./assets/bg_where_and_location.png" alt="where and location">
                 <div class="location__where-text">
@@ -80,7 +81,7 @@
         </section>
 
         <!-- Section 4: Bride and Groom -->
-        <section id="bride-and-groom" class="bride-and-groom">
+        <section class="bride-and-groom">
             <div class="bride-and-groom__head">
                 <img src="./assets/icon_bag.png" alt="Gallery Icon">
             </div>
@@ -110,7 +111,7 @@
         </section>
 
         <!-- Section 5: Gallery -->
-        <section id="gallery" class="gallery">
+        <section class="gallery">
             <!-- Head -->
             <div class="gallery__head">
                 <img src="./assets/icon_gallery.png" alt="Gallery Icon">
@@ -135,7 +136,7 @@
         </section>
 
         <!-- Section 6: Wishing Well -->
-        <section id="wishing-well" class="wishing-well">
+        <section class="wishing-well">
             <div class="wishing-well__head">
                 <img src="./assets/icon_gallery.png" alt="Wishing Well Icon">
             </div>
@@ -147,15 +148,67 @@
                 <div class="wishing-well__contents-text">
                     <p>멀리서 축하의 마음을 전해주시는 분들을 위해<br>계좌번호를 안내해 드립니다.<br><br>소중한 축하와 따뜻한 마음에<br>진심으로 감사드립니다!</p>
                     <div class="wishing-well__contents-text-item">
-                        <p><span class="accent">신랑</span><br><br>김민철 신한 110-280-261526</p>
-                        <p><span class="accent">신부</span><br><br>변현빈 우리 1002-146-589924</p>
+                        <p><span class="accent">신랑측</span></p>
+                        <div class="wishing-well__contents-text-item-account-container">
+                            <div class="wishing-well__contents-text-item-account">
+                                <p>김민철 신한은행 110-280-261526</p>
+                                <button type="button" class="copy-btn"
+                                    style="margin-left:8px; padding:8px; font-size:16px; cursor:pointer; width:32px; height:32px; display:flex; align-items:center; justify-content:center; border:none; background:transparent;"
+                                    onclick="copyToClipboard('김민철 신한은행 110-280-261526')">
+                                    <span class="material-icons" style="font-size:16px;">content_copy</span>
+                                </button>
+                            </div>
+                            <div class="wishing-well__contents-text-item-account">
+                                <p>김동하 국민은행 048-24-0394315</p>
+                                <button type="button" class="copy-btn"
+                                    style="margin-left:8px; padding:8px; font-size:16px; cursor:pointer; width:32px; height:32px; display:flex; align-items:center; justify-content:center; border:none; background:transparent;"
+                                    onclick="copyToClipboard('김동하 국민은행 048-24-0394315')">
+                                    <span class="material-icons" style="font-size:16px;">content_copy</span>
+                                </button>
+                            </div>
+                            <div class="wishing-well__contents-text-item-account">
+                                <p>백인숙 국민은행 510025-95-105979</p>
+                                <button type="button" class="copy-btn"
+                                    style="margin-left:8px; padding:8px; font-size:16px; cursor:pointer; width:32px; height:32px; display:flex; align-items:center; justify-content:center; border:none; background:transparent;"
+                                    onclick="copyToClipboard('백인숙 국민은행 510025-95-105979')">
+                                    <span class="material-icons" style="font-size:16px;">content_copy</span>
+                                </button>
+                            </div>
+                        </div>
+                        <p><span class="accent">신부측</span></p>
+                        <div class="wishing-well__contents-text-item-account-container">
+                            <div class="wishing-well__contents-text-item-account">
+                                <p>변현빈 우리은행 1002-146-589924</p>
+                                <button type="button" class="copy-btn"
+                                    style="margin-left:8px; padding:8px; font-size:16px; cursor:pointer; width:32px; height:32px; display:flex; align-items:center; justify-content:center; border:none; background:transparent;"
+                                    onclick="copyToClipboard('변현빈 우리은행 1002-146-589924')">
+                                    <span class="material-icons" style="font-size:16px;">content_copy</span>
+                                </button>
+                            </div>
+                            <div class="wishing-well__contents-text-item-account">
+                                <p>변성철 토스뱅크 1000-1646-4408</p>
+                                <button type="button" class="copy-btn"
+                                    style="margin-left:8px; padding:8px; font-size:16px; cursor:pointer; width:32px; height:32px; display:flex; align-items:center; justify-content:center; border:none; background:transparent;"
+                                    onclick="copyToClipboard('변성철 토스뱅크 1000-1646-4408')">
+                                    <span class="material-icons" style="font-size:16px;">content_copy</span>
+                                </button>
+                            </div>
+                            <div class="wishing-well__contents-text-item-account">
+                                <p>박성순 카카오뱅크 3333-1121-83378</p>
+                                <button type="button" class="copy-btn"
+                                    style="margin-left:8px; padding:8px; font-size:16px; cursor:pointer; width:32px; height:32px; display:flex; align-items:center; justify-content:center; border:none; background:transparent;"
+                                    onclick="copyToClipboard('박성순 카카오뱅크 3333-1121-83378')">
+                                    <span class="material-icons" style="font-size:16px;">content_copy</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Section 7: FAQ -->
-        <section id="faq" class="faq">
+        <section class="faq">
             <div class="faq__head">
                 <img src="./assets/icon_gallery.png" alt="Faq Icon">
             </div>
@@ -179,12 +232,35 @@
         </section>
 
         <!-- Section 8: Thanks -->
-        <section id="thanks" class="thanks">
+        <section class="thanks">
             <img src="./assets/bg_welcome_date.png" alt="Thanks" width="300px">
             <p>우리가 알거니와<br><br>하나님을 사랑하는 자<br><br>곧 그의 뜻대로 부르심을 입은 자들에게는<br><br>모든 것이 합력하여 선을 이루느니라<br><br>로마서 8장 28절
             </p>
         </section>
     </div>
+
+    <!-- Toast Message -->
+    <div id="toast" class="toast"></div>
+
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                showToast('계좌번호가 복사되었습니다!');
+            }).catch(err => {
+                showToast('복사에 실패했습니다.');
+            });
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 2000);
+        }
+    </script>
 </body>
 
 </html>
