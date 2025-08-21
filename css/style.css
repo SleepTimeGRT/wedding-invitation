@@ -111,6 +111,11 @@
   user-select: text;
 }
 
+.location__where-text p {
+  margin: 0;
+  padding: 0;
+}
+
 .location__calendar_buttons {
   width: fit-content;
   display: flex;
