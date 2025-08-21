@@ -11,6 +11,7 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  color-scheme: light;
 }
 
 .container {
@@ -21,4 +22,20 @@ body {
   display: flex;
   flex-direction: column;
   gap: 200px;
+}
+
+/* 다크 모드에서도 라이트 모드 스타일 강제 적용 */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #F6F4EE !important;
+    color: #000 !important;
+  }
+  
+  .container {
+    background-color: #F6F4EE !important;
+  }
+  
+  * {
+    color-scheme: light !important;
+  }
 }
