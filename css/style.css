@@ -104,14 +104,14 @@
   top: 35%;
   text-align: center;
   align-content: center;
+}
+
+.location__where-text p {
   -webkit-user-select: text;
   -khtml-user-select: text;
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
-}
-
-.location__where-text p {
   margin: 0;
   padding: 0;
 }
@@ -488,6 +488,9 @@
   gap: 8px;
   align-items: center;
   justify-content: space-between;
+}
+
+.wishing-well__contents-text-item-account p {
   -webkit-user-select: text;
   -khtml-user-select: text;
   -moz-user-select: text;
@@ -495,6 +498,21 @@
   user-select: text;
 }
 
+.copy-btn {
+  margin-left: 8px;
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  -webkit-appearance: none;
+  appearance: none;
+}
 
 .faq {
   width: 100%;
