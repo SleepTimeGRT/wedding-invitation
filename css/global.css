@@ -1,5 +1,5 @@
 body {
-  background-color: #F6F4EE;
+  background-color: #F5F2E4;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,7 +18,7 @@ body {
   width: 100%; 
   max-width: 430px;
   margin: 0 auto;
-  background-color: #F6F4EE;
+  background-color: #F5F2E4;
   display: flex;
   flex-direction: column;
   gap: 200px;
