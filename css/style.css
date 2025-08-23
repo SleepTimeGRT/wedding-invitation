@@ -336,7 +336,7 @@
 .invitation p {
   color: #494637;
   text-align: center;
-  font-family: Pretendard;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -350,6 +350,82 @@
   transform: translate(-50%, -50%);
   z-index: 2;
   width: 80%;
+}
+
+.bride-and-groom {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 0;
+}
+
+.bride-and-groom .accent {
+  font-weight: 700;
+}
+
+.bride-and-groom__hero-image {
+  width: 100%;
+  padding: 0 20px;
+  height: auto;
+  display: block;
+  box-sizing: border-box;
+}
+
+.bride-and-groom__hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.bride-and-groom__contents {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  justify-content: space-evenly;
+}
+
+.bride-and-groom__contents-item {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+}
+
+.bride-and-groom__contents-item p {
+  color: #494637;
+  text-align: center;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 31px;
+  /* 221.429% */
+  margin: 0;
+  padding: 0;
+}
+
+.bride-and-groom__contents-item p:first-of-type {
+  color: #494637;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 35px;
+  /* 175% */
+}
+
+.bride-and-groom__contents-item p:nth-child(3) {
+  font-weight: 700;
 }
 
 .location {
@@ -460,137 +536,11 @@
   height: auto;
 }
 
-.bride-and-groom {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-  padding: 0;
-}
-
-.bride-and-groom .accent {
-  font-weight: 700;
-}
-
-.bride-and-groom__head {
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.bride-and-groom__title {
-  text-align: center;
-  font-family: 'UhBee Se_hyun';
-  font-size: 25px;
-  font-weight: 400;
-  line-height: 1.2;
-  margin: 0;
-  padding: 0;
-}
-
-.bride-and-groom__title p {
-  margin: 0;
-  padding: 0;
-}
-
-.bride-and-groom__head img {
-  width: 46.045px;
-  height: 39.53px;
-  flex-shrink: 0;
-}
-
-.bride-and-groom__hero-image img {
-  width: 70%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.bride-and-groom__contents {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-  padding: 0;
-}
-
-.bride-and-groom__contents-head {
-  width: 70%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
-}
-
-.bride-and-groom__contents-head img:last-child {
-  margin-right: -20px;
-}
-
-.bride-and-groom__contents-item {
-  width: 50%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  align-items: center;
-  text-align: center;
-  gap: 24px;
-}
-
-.bride-and-groom__contents-item p {
-  color: #000;
-  text-align: center;
-  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 31px;
-  margin: 0;
-  padding: 0;
-}
-
-.bride-and-groom__contents-item p:first-of-type {
-
-  font-family: "UhBee Se_hyun";
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 35px;
-  /* 140% */
-}
-
-.bride-and-groom__contents-item p:nth-child(3) {
-  font-weight: 700;
-}
 
 .gallery {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-}
-
-.gallery__head {
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.gallery__head img {
-  width: 47.387px;
-  height: 46.504px;
-  flex-shrink: 0;
+  gap: 24px;
 }
 
 .gallery__hero-image img {
@@ -613,62 +563,101 @@
 
 .gallery__contents img:nth-child(1) {
   width: 55%;
-  margin-left: -2%;
+  margin-left: 5%;
 }
 
 .gallery__contents img:nth-child(2) {
-  width: 59%;
-  margin-right: -3%;
-  margin-top: -40px;
+  width: 38%;
+  margin-right: 5%;
+  margin-top: -46px;
   align-self: flex-end;
 }
 
 .gallery__contents img:nth-child(3) {
-  width: 74%;
-  margin-left: -2%;
-  margin-top: 26px;
+  margin-top: 16px;
+  width: 67%;
+  align-self: center;
 }
 
 .gallery__contents img:nth-child(4) {
-  width: 64%;
-  margin-right: -8%;
-  margin-top: -60px;
+  width: 86%;
+  margin-right: -13%;
+  margin-top: 214px;
   align-self: flex-end;
 }
 
 .gallery__contents img:nth-child(5) {
-  width: 66%;
-  margin-top: 25px;
+  width: 46%;
+  margin-top: -58px;
+  margin-left: 6%;
 }
 
 .gallery__contents img:nth-child(6) {
-  width: 122%;
-  margin-top: 25px;
+  width: 62%;
+  margin-top: 15px;
   align-self: center;
 }
 
 .gallery__contents img:nth-child(7) {
-  width: 60%;
-  margin-top: 25px;
+  width: 76%;
+  margin-top: 177px;
   align-self: flex-end;
+  margin-right: -4%;
 }
 
 
 .gallery__contents img:nth-child(8) {
-  width: 65%;
-  margin-left: -7%;
-  margin-top: 21px;
-  z-index: 1;
+  width: 62%;
+  margin-left: -4%;
+  margin-top: 17px;
 }
 
 
 .gallery__contents img:nth-child(9) {
-  width: 68%;
-  margin-top: -58px;
+  width: 51%;
+  margin-top: 207px;
+  margin-right: -6%;
   align-self: flex-end;
-  z-index: 0;
+}
+.gallery__contents img:nth-child(10) {
+  width: 74%;
+  margin-top: 16px;
+  margin-left: -5%;
 }
 
+.gallery__contents img:nth-child(11) {
+  width: 100%;
+  margin-top: 18px;
+  align-self: center;
+}
+.gallery__contents img:nth-child(12) {
+  width: 52%;
+  margin-top: 23px;
+  margin-right: -6%;
+  align-self: flex-end;
+}
+.gallery__contents img:nth-child(13) {
+  width: 76%;
+  margin-top: 251px;
+  margin-right: -4%;
+  align-self: flex-end;
+}
+.gallery__contents img:nth-child(13) {
+  width: 76%;
+  margin-top: 251px;
+  margin-right: -4%;
+  align-self: flex-end;
+}
+.gallery__contents img:nth-child(14) {
+  width: 76%;
+  margin-top: 13px;
+  margin-left: -2%;
+}
+.gallery__contents img:nth-child(15) {
+  width: 100%;
+  margin-top: 19px;
+  align-self: center;
+}
 
 .wishing-well {
   width: 100%;
@@ -736,7 +725,7 @@
 }
 
 .wishing-well__contents-text p {
-  color: #000;
+  color: #494637;
   text-align: center;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-size: 16px;
@@ -871,7 +860,7 @@
 }
 
 .thanks p {
-  color: #000;
+  color: #494637;
   text-align: center;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-size: 16px;
@@ -938,4 +927,32 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.section-title {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__head {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__title {
+  color: #494637;
+  font-family: "Beth Ellen";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: center;
+  /* 140% */
+  margin: 0;
+  padding: 0;
 }

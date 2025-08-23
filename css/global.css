@@ -1,5 +1,5 @@
 body {
-  background-color: #EFEBD4;
+  background-color: #E6E0C5;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -43,7 +43,7 @@ img {
 /* 다크 모드에서도 라이트 모드 스타일 강제 적용 */
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #EFEBD4 !important;
+    background-color: #E6E0C5 !important;
     color: #494637 !important;
   }
   
