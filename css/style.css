@@ -679,6 +679,8 @@
   width: 100%;
   height: auto;
   display: block;
+  will-change: transform;
+  transform: translateY(0px);
 }
 
 .gallery__contents img:nth-child(1) {
