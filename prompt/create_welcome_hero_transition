@@ -1,0 +1,17 @@
+Of course. Here is a well-structured prompt in Markdown format for the Gemini CLI, reflecting your new requirements for a fade-in/fade-out animation.
+
+***
+
+# Task: Implement Fading Image Slideshow in Welcome Section
+
+Please update the `welcome` section by implementing a CSS-only image slideshow within the **child element of `.welcome__hero`**.
+
+## Requirements
+
+- **Effect**: Create an automatic image slideshow where images transition using a **fade-in and fade-out** animation.
+- **Animation Cycle**: The animation must follow a precise 4-second cycle for each image:
+    - An image should be fully visible for **3 seconds**.
+    - The fade transition to the next image should last **1 second**.
+- **Assets**: Source all images from the `assets/welcome/heros/` directory.
+- **Technology**: The implementation must use **only HTML and CSS**.
+- **Constraint**: It is critical that **no code outside of the `welcome` section is modified**.

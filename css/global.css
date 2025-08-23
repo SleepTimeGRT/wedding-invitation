@@ -1,10 +1,10 @@
 body {
-  background-color: #F5F2E4;
+  background-color: #EFEBD4;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  color: #000;
+  color: #494637;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -22,6 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 200px;
+  overflow: hidden;
 }
 
 /* 이미지 저장 방지 */
@@ -42,12 +43,12 @@ img {
 /* 다크 모드에서도 라이트 모드 스타일 강제 적용 */
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #F6F4EE !important;
-    color: #000 !important;
+    background-color: #EFEBD4 !important;
+    color: #494637 !important;
   }
   
   .container {
-    background-color: #F6F4EE !important;
+    background-color: #F5F2E4 !important;
   }
   
   * {
