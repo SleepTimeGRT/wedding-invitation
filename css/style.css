@@ -704,7 +704,8 @@
 .gallery__contents img:nth-child(4) {
   width: 86%;
   margin-right: -13%;
-  margin-top: 214px;
+  margin-top: 84px;
+  /* margin-top: 214px; */
   align-self: flex-end;
 }
 
@@ -722,7 +723,7 @@
 
 .gallery__contents img:nth-child(7) {
   width: 76%;
-  margin-top: 177px;
+  margin-top: 47px;
   align-self: flex-end;
   margin-right: -4%;
 }
@@ -737,7 +738,7 @@
 
 .gallery__contents img:nth-child(9) {
   width: 51%;
-  margin-top: 207px;
+  margin-top: 77px;
   margin-right: -6%;
   align-self: flex-end;
 }
@@ -763,14 +764,7 @@
 
 .gallery__contents img:nth-child(13) {
   width: 76%;
-  margin-top: 251px;
-  margin-right: -4%;
-  align-self: flex-end;
-}
-
-.gallery__contents img:nth-child(13) {
-  width: 76%;
-  margin-top: 251px;
+  margin-top: 91px;
   margin-right: -4%;
   align-self: flex-end;
 }
