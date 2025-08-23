@@ -354,21 +354,24 @@
   align-self: flex-end;
 }
 
-
 .gallery__contents img:nth-child(5) {
+  width: 66%;
+  margin-top: 25px;
+}
+.gallery__contents img:nth-child(6) {
   width: 122%;
   margin-top: 25px;
   align-self: center;
 }
 
-.gallery__contents img:nth-child(6) {
+.gallery__contents img:nth-child(7) {
   width: 60%;
   margin-top: 25px;
   align-self: flex-end;
 }
 
 
-.gallery__contents img:nth-child(7) {
+.gallery__contents img:nth-child(8) {
   width: 65%;
   margin-left: -7%;
   margin-top: 21px;
@@ -376,12 +379,13 @@
 }
 
 
-.gallery__contents img:nth-child(8) {
+.gallery__contents img:nth-child(9) {
   width: 68%;
   margin-top: -58px;
   align-self: flex-end;
   z-index: 0;
 }
+
 
 .wishing-well {
   width: 100%;
