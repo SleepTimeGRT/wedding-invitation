@@ -410,16 +410,23 @@
                             (triggerPoint - imageTop) / (triggerPoint + imageHeight)
                         ));
                         
-                        // 저장된 움직임 범위 사용
-                        const movementRange = imageMovements.get(img) || 50; // 기본값 50px
-                        const translateY = -movementRange * progress;
-                        
-                        // transform 속성 직접 설정
-                        img.style.transform = `translateY(${translateY}px)`;
-                        
-                        // 디버깅용 로그 (첫 번째 이미지만)
-                        if (index === 0) {
-                            console.log(`Image ${index + 1}: progress=${progress.toFixed(2)}, translateY=${translateY}px, range=${movementRange}px`);
+                        // 이미지가 뷰포트 상단을 넘어가면 움직임 멈춤
+                        if (imageTop + imageHeight <= 0) {
+                            // 이미지가 완전히 뷰포트 상단을 넘어간 경우
+                            const movementRange = imageMovements.get(img) || 50;
+                            img.style.transform = `translateY(-${movementRange}px)`;
+                        } else {
+                            // 정상적인 패럴랙스 움직임
+                            const movementRange = imageMovements.get(img) || 50; // 기본값 50px
+                            const translateY = -movementRange * progress;
+                            
+                            // transform 속성 직접 설정
+                            img.style.transform = `translateY(${translateY}px)`;
+                            
+                            // 디버깅용 로그 (첫 번째 이미지만)
+                            if (index === 0) {
+                                console.log(`Image ${index + 1}: progress=${progress.toFixed(2)}, translateY=${translateY}px, range=${movementRange}px`);
+                            }
                         }
                     } else if(imageTop > triggerPoint) {
                         // 이미지가 뷰포트 밖에 있는 경우 translateY 초기화
