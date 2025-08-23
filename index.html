@@ -421,6 +421,9 @@
                         if (index === 0) {
                             console.log(`Image ${index + 1}: progress=${progress.toFixed(2)}, translateY=${translateY}px, range=${movementRange}px`);
                         }
+                    } else if(imageTop > triggerPoint) {
+                        // 이미지가 뷰포트 밖에 있는 경우 translateY 초기화
+                        img.style.transform = 'translateY(0px)';
                     }
                 });
             }
