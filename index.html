@@ -359,38 +359,23 @@
             const galleryImages = document.querySelectorAll('.gallery__contents img');
             const imageMovements = new Map(); // 각 이미지의 움직임 범위를 저장
             
-            // 이미지 로딩 완료 후 움직임 범위 계산
+                        // 미리 계산된 움직임 범위 설정
             function calculateImageMovements() {
+                // 실제 이미지 크기로 계산된 movement 값들
+                const movements = [64, 81, 39, 160, 11, 122, 2, 1, 42, 131, 49, 43, 151, 159, 165];
+                
                 galleryImages.forEach((img, index) => {
-                    if (img.complete && img.naturalWidth && img.naturalHeight) {
-                        // 이미지의 가로×세로를 199로 나눈 나머지 계산
-                        const imageArea = img.naturalWidth * img.naturalHeight;
-                        const movementRange = imageArea % 199;
-                        
-                        // 움직임 범위를 저장
-                        imageMovements.set(img, movementRange);
-                        
-                        console.log(`Image ${index + 1}: ${img.naturalWidth}×${img.naturalHeight} = ${imageArea}, movement = ${movementRange}px`);
-                    }
+                    const movementRange = movements[index] || 50; // 기본값 50px
+                    
+                    // 움직임 범위를 저장
+                    imageMovements.set(img, movementRange);
+                    
+                    console.log(`Image ${index + 1}: movement = ${movementRange}px`);
                 });
             }
             
-            // 모든 이미지가 로딩되었는지 확인
-            function checkAllImagesLoaded() {
-                const loadedImages = Array.from(galleryImages).filter(img => img.complete);
-                if (loadedImages.length === galleryImages.length) {
-                    calculateImageMovements();
-                }
-            }
-            
-            // 이미지 로딩 이벤트 리스너
-            galleryImages.forEach(img => {
-                if (img.complete) {
-                    checkAllImagesLoaded();
-                } else {
-                    img.addEventListener('load', checkAllImagesLoaded);
-                }
-            });
+            // DOM 로드 즉시 움직임 범위 설정 (이미지 로딩 대기 불필요)
+            calculateImageMovements();
             
             function updateGalleryParallax() {
                 const viewportHeight = window.innerHeight;
