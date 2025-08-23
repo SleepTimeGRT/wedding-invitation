@@ -466,7 +466,7 @@
   transform: translate(-50%, -50%);
 }
 
-.location__when_text p {
+.location__when_text time {
   color: #494637;
   text-align: center;
   font-family: "Beth Ellen";
@@ -477,6 +477,11 @@
   /* 340% */
   margin: 0;
   padding: 0;
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
 }
 
 .location__when_text p:first-of-type {
@@ -790,30 +795,6 @@
   font-weight: 700;
 }
 
-.wishing-well__head {
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.wishing-well__head img {
-  width: 47.387px;
-  height: 46.504px;
-  flex-shrink: 0;
-}
-
-
-.wishing-well__title p {
-  font-size: 25px;
-  font-family: "UhBee Se_hyun";
-  font-style: normal;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
 .wishing-well__contents {
   width: 100%;
   height: auto;
@@ -827,6 +808,7 @@
   width: 100%;
   height: auto;
   max-width: 100%;
+  position: relative;
   object-fit: contain;
 }
 
@@ -843,17 +825,29 @@
   left: 0;
 }
 
-.wishing-well__contents-text p {
+.wishing-well__contents-text p#wishing-well__contents-text-title {
   color: #494637;
   text-align: center;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px;
+  /* 221.429% */
+  padding: 0;
+  margin: 0;
+}
+
+.wishing-well__contents-text p {
+  color: #494637;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 31px;
+  /* 221.429% */
   padding: 0;
   margin: 0;
-  /* 193.75% */
 }
 
 .wishing-well__contents-text-item {
@@ -919,25 +913,12 @@
   gap: 24px;
 }
 
-.faq__head {
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.faq__head img {
-  width: 47.387px;
-  height: 46.504px;
-  flex-shrink: 0;
-}
-
 .faq__contents {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 120px;
 }
 
 .faq__contents-item {
@@ -945,25 +926,26 @@
   height: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 8px;
 }
 
-.faq__contents-item p {
-  font-size: 15px;
-  font-family: "UhBee Se_hyun";
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  line-height: 35px;
+.faq__contents-item img {
+  width: 100%;
+  height: auto;
 }
 
-.faq__title p {
-  font-size: 25px;
-  font-family: "Beth Ellen";
+.faq__contents-item p {
+  color: #494637;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 400;
-  margin: 0;
+  font-weight: 500;
+  line-height: 35px;
+  /* 250% */
   padding: 0;
+  margin: 0;
 }
 
 .thanks {
@@ -982,10 +964,11 @@
   color: #494637;
   text-align: center;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
+  /* 192.857% */
   padding: 0;
   margin: 0;
 }
