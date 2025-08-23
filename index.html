@@ -187,11 +187,19 @@
 
         <!-- Section 5: When and Location -->
         <section class="location">
+            <div class="location__when">
+                <img src="./assets/bg_when.png" alt="when">
+                <div class="location__when_text">
+                    <p>Wedding Day</p>
+                    <p>2025.11.08 Sat 12pm</p>
+                </div>
+            </div>
             <div class="location__where">
-                <img src="./assets/bg_where_and_location.png" alt="where and location">
+                <img src="./assets/bg_location.png" alt="location">
                 <div class="location__where-text">
-                    <p><span class="date">2025년 11월 8일 토요일 오전 11시<br><br>분당 만나교회 시온성전(2F)</span><br><span
-                            class="church"></span>경기도 성남시 분당구 양현로 353</span></p>
+                    <p>Location</p>
+                    <p id="location__where-text-location"><span class="accent">분당 만나교회 시온성전(2F)</span><br>경기도 성남시 분당구
+                        양현로 353</p>
                     <div class="location__calendar_buttons">
                         <button type="button" class="calendar-btn" onclick="addToGoogleCalendar()">
                             <img src="./assets/icon_google_calendar.png" alt="Google Calendar"
@@ -200,19 +208,16 @@
                     </div>
                 </div>
             </div>
-            <div class="location__direction">
-                <img src="./assets/bg_direction.png" alt="direction">
-                <div class="location__direction-content-car">
-                    <img src="./assets/image_car.png" alt="car" width="113px" height="113px">
-                </div>
-                <div class="location__direction-content">
-                    <div class="location__direction-text">
-                        <p><span class="accent">자차로 오신다면</span><br>성남시청 공용 주차장 (무료) 이용 후 → 도보 약 7분</p>
-                        <p><span class="accent">대중교통으로 오신다면</span><br>수인분당선 야탑역 (4번 출구) → 도보 약 15분</p>
+            <div class="location__notice">
+                <img src="./assets/bg_notice.png" alt="notice">
+                <div class="location__notice-content">
+                    <p id="location__notice-content-title">Notice</p>
+                    <div class="location__notice-text">
+                        <p><span class="accent">자차 이용 시</span><br>성남시청 공용 주차장 (무료) 이용 후 → 도보 약 7분<br><br><span class="accent">대중교통 이용 시</span><br>수인분당선 야탑역 (4번 출구) → 도보 약 15분</p>
                     </div>
                     <div class="location__caution">
                         <img src="./assets/image_caution.png" alt="caution" width="48px" height="94px">
-                        <p>교회 주차장이 매우 협소합니다.<br>꼭! 성남시청 주차장을 이용해주세요!</p>
+                        <p>교회 주차장이 매우 협소해서<br>성남시청 주차장 이용을 권장드려요.</p>
                     </div>
                 </div>
             </div>
