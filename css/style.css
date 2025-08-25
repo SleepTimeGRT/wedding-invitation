@@ -85,46 +85,46 @@
   /* 0초 ~ 1초: 처음부터 보여짐 */
   0%,
   12.5% {
-    transform: translateX(0%);
+    transform: translateX(0%) rotate(0deg);
   }
 
   /* 1초 ~ 2초: 4steps로 왼쪽으로 사라지며 Y축으로 무작위 이동 */
   15.625% {
-    transform: translateX(-27.5%) translateY(7%);
+    transform: translateX(-27.5%) translateY(7%) rotate(25deg);
   }
 
   18.75% {
-    transform: translateX(-55%) translateY(-5%);
+    transform: translateX(-55%) translateY(-5%) rotate(-18deg);
   }
 
   21.875% {
-    transform: translateX(-82.5%) translateY(3%);
+    transform: translateX(-82.5%) translateY(3%) rotate(12deg);
   }
 
   25% {
-    transform: translateX(-110%) translateY(-8%);
+    transform: translateX(-110%) rotate(0deg);
   }
 
   /* 2초 ~ 7초: 숨긴 상태로 대기 (오른쪽에서 나타나기 위해 위치 이동) */
   87.5% {
-    transform: translateX(110%);
+    transform: translateX(110%) rotate(0deg);
   }
 
   /* 7초 ~ 8초: 4steps로 오른쪽에서 나타나며 Y축으로 무작위 이동 */
   90.625% {
-    transform: translateX(82.5%) translateY(4%);
+    transform: translateX(82.5%) translateY(4%) rotate(-22deg);
   }
 
   93.75% {
-    transform: translateX(55%) translateY(-7%);
+    transform: translateX(55%) translateY(-7%) rotate(19deg);
   }
 
   96.875% {
-    transform: translateX(27.5%) translateY(6%);
+    transform: translateX(27.5%) translateY(6%) rotate(-15deg);
   }
 
   100% {
-    transform: translateX(0%) translateY(0%);
+    transform: translateX(0%) translateY(0%) rotate(0deg);
   }
 
   /* 최종 위치 안착 */
@@ -135,53 +135,53 @@
   /* 0초 ~ 1초: 숨어있음 */
   0%,
   12.5% {
-    transform: translateX(110%);
+    transform: translateX(110%) rotate(0deg);
   }
 
   /* 1초 ~ 2초: 4steps로 오른쪽에서 나타나며 Y축으로 무작위 이동 */
   15.625% {
-    transform: translateX(82.5%) translateY(-5%);
+    transform: translateX(82.5%) translateY(-5%) rotate(-21deg);
   }
 
   18.75% {
-    transform: translateX(55%) translateY(7%);
+    transform: translateX(55%) translateY(7%) rotate(27deg);
   }
 
   21.875% {
-    transform: translateX(27.5%) translateY(-2%);
+    transform: translateX(27.5%) translateY(-2%) rotate(-12deg);
   }
 
   25% {
-    transform: translateX(0%) translateY(0%);
+    transform: translateX(0%) translateY(0%) rotate(0deg);
   }
 
   /* 최종 위치 안착 */
 
   /* 2초 ~ 3초: 보여짐 */
   37.5% {
-    transform: translateX(0%);
+    transform: translateX(0%) rotate(0deg);
   }
 
   /* 3초 ~ 4초: 4steps로 왼쪽으로 사라지며 Y축으로 무작위 이동 */
   40.625% {
-    transform: translateX(-27.5%) translateY(6%);
+    transform: translateX(-27.5%) translateY(6%) rotate(23deg);
   }
 
   43.75% {
-    transform: translateX(-55%) translateY(-8%);
+    transform: translateX(-55%) translateY(-8%) rotate(-26deg);
   }
 
   46.875% {
-    transform: translateX(-82.5%) translateY(4%);
+    transform: translateX(-82.5%) translateY(4%) rotate(14deg);
   }
 
   50% {
-    transform: translateX(-110%) translateY(0%);
+    transform: translateX(-110%) translateY(0%) rotate(0deg);
   }
 
   /* 4초 ~ 8초: 숨긴 상태로 대기 (다음 루프를 위해 오른쪽으로 이동) */
   100% {
-    transform: translateX(110%);
+    transform: translateX(110%) rotate(0deg);
   }
 }
 
@@ -190,53 +190,53 @@
   /* 0초 ~ 3초: 숨어있음 */
   0%,
   37.5% {
-    transform: translateX(110%);
+    transform: translateX(110%) rotate(0deg);
   }
 
   /* 3초 ~ 4초: 4steps로 오른쪽에서 나타나며 Y축으로 무작위 이동 */
   40.625% {
-    transform: translateX(82.5%) translateY(-6%);
+    transform: translateX(82.5%) translateY(-6%) rotate(-24deg);
   }
 
   43.75% {
-    transform: translateX(55%) translateY(8%);
+    transform: translateX(55%) translateY(8%) rotate(29deg);
   }
 
   46.875% {
-    transform: translateX(27.5%) translateY(-4%);
+    transform: translateX(27.5%) translateY(-4%) rotate(-16deg);
   }
 
   50% {
-    transform: translateX(0%) translateY(0%);
+    transform: translateX(0%) translateY(0%) rotate(0deg);
   }
 
   /* 최종 위치 안착 */
 
   /* 4초 ~ 5초: 보여짐 */
   62.5% {
-    transform: translateX(0%);
+    transform: translateX(0%) rotate(0deg);
   }
 
   /* 5초 ~ 6초: 4steps로 왼쪽으로 사라지며 Y축으로 무작위 이동 */
   65.625% {
-    transform: translateX(-27.5%) translateY(-5%);
+    transform: translateX(-27.5%) translateY(-5%) rotate(-19deg);
   }
 
   68.75% {
-    transform: translateX(-55%) translateY(7%);
+    transform: translateX(-55%) translateY(7%) rotate(22deg);
   }
 
   71.875% {
-    transform: translateX(-82.5%) translateY(-6%);
+    transform: translateX(-82.5%) translateY(-6%) rotate(-17deg);
   }
 
   75% {
-    transform: translateX(-110%) translateY(3%);
+    transform: translateX(-110%) rotate(0deg);
   }
 
   /* 6초 ~ 8초: 숨긴 상태로 대기 (다음 루프를 위해 오른쪽으로 이동) */
   100% {
-    transform: translateX(110%);
+    transform: translateX(110%) rotate(0deg);
   }
 }
 
@@ -245,48 +245,48 @@
   /* 0초 ~ 5초: 숨어있음 */
   0%,
   62.5% {
-    transform: translateX(110%);
+    transform: translateX(110%) rotate(0deg);
   }
 
   /* 5초 ~ 6초: 4steps로 오른쪽에서 나타나며 Y축으로 무작위 이동 */
   65.625% {
-    transform: translateX(82.5%) translateY(6%);
+    transform: translateX(82.5%) translateY(6%) rotate(18deg);
   }
 
   68.75% {
-    transform: translateX(55%) translateY(-2%);
+    transform: translateX(55%) translateY(-2%) rotate(-8deg);
   }
 
   71.875% {
-    transform: translateX(27.5%) translateY(4%);
+    transform: translateX(27.5%) translateY(4%) rotate(16deg);
   }
 
   75% {
-    transform: translateX(0%) translateY(0%);
+    transform: translateX(0%) translateY(0%) rotate(0deg);
   }
 
   /* 최종 위치 안착 */
 
   /* 6초 ~ 7초: 보여짐 */
   87.5% {
-    transform: translateX(0%);
+    transform: translateX(0%) rotate(0deg);
   }
 
   /* 7초 ~ 8초: 4steps로 왼쪽으로 사라지며 Y축으로 무작위 이동 */
   90.625% {
-    transform: translateX(-27.5%) translateY(-8%);
+    transform: translateX(-27.5%) translateY(-8%) rotate(-29deg);
   }
 
   93.75% {
-    transform: translateX(-55%) translateY(4%);
+    transform: translateX(-55%) translateY(4%) rotate(17deg);
   }
 
   96.875% {
-    transform: translateX(-82.5%) translateY(7%);
+    transform: translateX(-82.5%) translateY(7%) rotate(-25deg);
   }
 
   100% {
-    transform: translateX(-110%) translateY(-5%);
+    transform: translateX(-110%) rotate(0deg);
   }
 }
 
