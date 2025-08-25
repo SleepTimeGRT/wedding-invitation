@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="description" content="2025.11.08 12:00 분당 만나교회">
     <meta name="format-detection" content="telephone=no, email=no, address=no">
     <meta property="og:title" content="민철 ❤️ 현빈 결혼합니다">
@@ -81,6 +82,110 @@
                     //안드로이드는 Chrome이 설치되어있음으로 강제로 스킴실행한다.
                     location.href = 'intent://' + target_url.replace(/https?:\/\//i, '') + '#Intent;scheme=http;package=com.android.chrome;end';
                 }
+            }
+        });
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JHKSGLK6H2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-JHKSGLK6H2');
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const calendarButton = document.getElementById('add-to-calendar-btn');
+            if (calendarButton) {
+                calendarButton.addEventListener('click', function () {
+                    gtag('event', 'add_to_calendar', {
+                        'event_category': 'button',
+                        'event_label': '캘린더 일정 추가'
+                    });
+                });
+            }
+        });
+
+        // 이벤트 2: copyright 섹션 안의 p태그 100% 노출 추적
+        document.addEventListener('DOMContentLoaded', function () {
+            // 1. 추적할 목표 요소를 '.copyright p'로 수정합니다.
+            const target = document.querySelector('.copyright p');
+
+            if (target) {
+                const observerOptions = {
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 1.0 // 목표 요소(p 태그)가 100% 보여야만 실행
+                };
+
+                const observerCallback = (entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting && entry.intersectionRatio === 1.0) {
+
+                            gtag('event', 'copyright_viewed', {
+                                'event_category': 'scroll_depth',
+                                'event_label': '저작권 섹션 100% 노출'
+                            });
+
+                            // 이벤트를 한 번만 보내기 위해 관찰을 중단합니다.
+                            observer.unobserve(target);
+                        }
+                    });
+                };
+
+                const observer = new IntersectionObserver(observerCallback, observerOptions);
+                observer.observe(target);
+            }
+        });
+
+        // 이벤트 3: 환영 애니메이션 시청 완료 추적 (수정된 버전)
+        document.addEventListener('DOMContentLoaded', function () {
+            // 1. 추적할 목표 요소들을 선택합니다.
+            const heroContainer = document.querySelector('.welcome__hero');
+            const heroFirstImage = document.querySelector('.welcome__hero img:nth-child(1)');
+
+            // 두 요소가 모두 페이지에 존재할 경우에만 실행합니다.
+            if (heroContainer && heroFirstImage) {
+                let isVisible = false;      // heroContainer가 화면에 보이는지 여부를 저장하는 변수
+                let animationFinished = false; // 애니메이션이 1회 완료되었는지 여부를 저장하는 변수
+
+                // 두 조건을 모두 만족했을 때 GA 이벤트를 보내는 함수
+                const sendEventIfNeeded = () => {
+                    if (isVisible && animationFinished) {
+                        gtag('event', 'animation_viewed_in_view', { // 이벤트 이름 변경
+                            'event_category': 'engagement',
+                            'event_label': '환영 애니메이션 시청 완료 (화면 노출 상태)'
+                        });
+
+                        // 이벤트는 한 번만 보내야 하므로, Observer와 EventListener를 모두 제거합니다.
+                        observer.disconnect();
+                        heroFirstImage.removeEventListener('animationiteration', onAnimationFinish);
+                    }
+                };
+
+                // 2. Intersection Observer 설정 (화면 노출 감지)
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        // isIntersecting이 true이면 화면에 보이는 것입니다.
+                        if (entry.isIntersecting) {
+                            isVisible = true;
+                            sendEventIfNeeded();
+                        } else {
+                            isVisible = false;
+                        }
+                    });
+                }, { threshold: 0.5 }); // 50% 이상 보일 때를 기준으로 합니다.
+
+                // 3. 애니메이션 완료 이벤트 리스너 설정
+                const onAnimationFinish = () => {
+                    animationFinished = true;
+                    sendEventIfNeeded();
+                };
+
+                // 4. 관찰 시작 및 리스너 등록
+                observer.observe(heroContainer);
+                heroFirstImage.addEventListener('animationiteration', onAnimationFinish, { once: true });
             }
         });
     </script>
@@ -199,9 +304,11 @@
                 <img src="./assets/bg_location.png" alt="location">
                 <div class="location__where-text">
                     <p>Location</p>
-                    <p id="location__where-text-location"><span class="accent">분당 만나교회 시온성전(2F)</span><br>경기도 성남시 분당구 양현로 353</p>
+                    <p id="location__where-text-location"><span class="accent">분당 만나교회 시온성전(2F)</span><br>경기도 성남시 분당구
+                        양현로 353</p>
                     <div class="location__calendar_buttons">
-                        <button type="button" class="calendar-btn" onclick="addToGoogleCalendar()">
+                        <button id="add-to-calendar-btn" type="button" class="calendar-btn"
+                            onclick="addToGoogleCalendar()">
                             <img src="./assets/icon_google_calendar.png" alt="Google Calendar"
                                 style="width: 48px; height: 48px;">
                         </button>
@@ -333,7 +440,8 @@
                         <br>
                         그래서 서로 다른 두 사람이 만나,<br>
                         하나의 가족을 이룬다는 의미에서<br>
-                        콜라주 컨셉으로 청첩장을 만들어봤어요.</p>
+                        콜라주 컨셉으로 청첩장을 만들어봤어요.
+                    </p>
                 </div>
             </div>
         </section>
@@ -356,46 +464,46 @@
 
     <script>
         // 갤러리 스크롤 패럴랙스 효과
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const galleryImages = document.querySelectorAll('.gallery__contents img');
             const imageMovements = new Map(); // 각 이미지의 움직임 범위를 저장
-            
-                        // 미리 계산된 움직임 범위 설정
+
+            // 미리 계산된 움직임 범위 설정
             function calculateImageMovements() {
                 // 실제 이미지 크기로 계산된 movement 값들
                 const movements = [64, 81, 39, 160, 11, 122, 2, 1, 42, 131, 49, 43, 151, 159, 165];
-                
+
                 galleryImages.forEach((img, index) => {
                     const movementRange = movements[index] || 50; // 기본값 50px
-                    
+
                     // 움직임 범위를 저장
                     imageMovements.set(img, movementRange);
-                    
+
                     console.log(`Image ${index + 1}: movement = ${movementRange}px`);
                 });
             }
-            
+
             // DOM 로드 즉시 움직임 범위 설정 (이미지 로딩 대기 불필요)
             calculateImageMovements();
-            
+
             function updateGalleryParallax() {
                 const viewportHeight = window.innerHeight;
-                
+
                 galleryImages.forEach((img, index) => {
                     const rect = img.getBoundingClientRect();
-                    
+
                     // 이미지가 뷰포트 하단 30%에 도달했는지 확인
                     const triggerPoint = viewportHeight * 0.7; // 뷰포트 하단 30% 지점
                     const imageTop = rect.top;
                     const imageHeight = rect.height;
-                    
+
                     if (imageTop <= triggerPoint && imageTop + imageHeight >= 0) {
                         // 이미지가 뷰포트 하단 30%에 도달한 상태
                         // 이미지가 뷰포트 하단 30%에서 시작해서 상단까지 올라가는 비율 계산
-                        const progress = Math.max(0, Math.min(1, 
+                        const progress = Math.max(0, Math.min(1,
                             (triggerPoint - imageTop) / (triggerPoint + imageHeight)
                         ));
-                        
+
                         // 이미지가 뷰포트 상단을 넘어가면 움직임 멈춤
                         if (imageTop + imageHeight <= 0) {
                             // 이미지가 완전히 뷰포트 상단을 넘어간 경우
@@ -405,16 +513,16 @@
                             // 정상적인 패럴랙스 움직임
                             const movementRange = imageMovements.get(img) || 50; // 기본값 50px
                             const translateY = -movementRange * progress;
-                            
+
                             // transform 속성 직접 설정
                             img.style.transform = `translateY(${translateY}px)`;
-                            
+
                             // 디버깅용 로그 (첫 번째 이미지만)
                             if (index === 0) {
                                 console.log(`Image ${index + 1}: progress=${progress.toFixed(2)}, translateY=${translateY}px, range=${movementRange}px`);
                             }
                         }
-                    } else if(imageTop > triggerPoint) {
+                    } else if (imageTop > triggerPoint) {
                         // 이미지가 뷰포트 밖에 있는 경우 translateY 초기화
                         img.style.transform = 'translateY(0px)';
                     }
@@ -435,7 +543,7 @@
 
             // 스크롤 이벤트 리스너
             window.addEventListener('scroll', requestTick, { passive: true });
-            
+
             // 초기 실행
             updateGalleryParallax();
         });
