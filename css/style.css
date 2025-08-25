@@ -59,232 +59,261 @@
   width: 100%;
   object-fit: cover;
 }
-
 .welcome__hero img:nth-child(1) {
-  animation: slide-pause-slide-first 8s infinite;
+  animation: slide-pause-slide-first 10s infinite;
   animation-timing-function: step-end;
 }
 
 .welcome__hero img:nth-child(2) {
-  animation: slide-pause-slide-second 8s infinite;
+  animation: slide-pause-slide-second 10s infinite;
   animation-timing-function: step-end;
 }
 
 .welcome__hero img:nth-child(3) {
-  animation: slide-pause-slide-third 8s infinite;
+  animation: slide-pause-slide-third 10s infinite;
   animation-timing-function: step-end;
 }
 
 .welcome__hero img:nth-child(4) {
-  animation: slide-pause-slide-fourth 8s infinite;
+  animation: slide-pause-slide-fourth 10s infinite;
+  animation-timing-function: step-end;
+}
+.welcome__hero img:nth-child(5) {
+  animation: slide-pause-slide-fifth 10s infinite;
   animation-timing-function: step-end;
 }
 
 @keyframes slide-pause-slide-first {
-
-  /* 0초 ~ 1초: 처음부터 보여짐 */
   0%,
-  12.5% {
+  10% {
     transform: translateX(0%) rotate(0deg);
   }
-
-  /* 1초 ~ 2초: 4steps로 왼쪽으로 사라지며 Y축으로 무작위 이동 */
-  15.625% {
-    transform: translateX(-27.5%) translateY(7%) rotate(25deg);
+  11.67% {
+    transform: translateX(-22%) translateY(7%) rotate(12.5deg); 
   }
-
-  18.75% {
-    transform: translateX(-55%) translateY(-5%) rotate(-18deg);
+  13.33% {
+    transform: translateX(-44%) translateY(-5%) rotate(-9deg); 
   }
-
-  21.875% {
-    transform: translateX(-82.5%) translateY(3%) rotate(12deg);
+  15% {
+    transform: translateX(-66%) translateY(3%) rotate(6deg); 
   }
-
-  25% {
+  16.67% {
+    transform: translateX(-88%) translateY(8%) rotate(-10deg); 
+  }
+  18.33% {
+    transform: translateX(-110%) translateY(-2%) rotate(5deg); 
+  }
+  20% {
     transform: translateX(-110%) rotate(0deg);
   }
-
-  /* 2초 ~ 7초: 숨긴 상태로 대기 (오른쪽에서 나타나기 위해 위치 이동) */
-  87.5% {
+  20.01%,
+  90% {
     transform: translateX(110%) rotate(0deg);
   }
-
-  /* 7초 ~ 8초: 4steps로 오른쪽에서 나타나며 Y축으로 무작위 이동 */
-  90.625% {
-    transform: translateX(82.5%) translateY(4%) rotate(-22deg);
+  91.67% {
+    transform: translateX(88%) translateY(4%) rotate(-11deg); 
   }
-
-  93.75% {
-    transform: translateX(55%) translateY(-7%) rotate(19deg);
+  93.33% {
+    transform: translateX(66%) translateY(-7%) rotate(9.5deg); 
   }
-
-  96.875% {
-    transform: translateX(27.5%) translateY(6%) rotate(-15deg);
+  95% {
+    transform: translateX(44%) translateY(6%) rotate(-7.5deg); 
   }
-
+  96.67% {
+    transform: translateX(22%) translateY(-3%) rotate(7deg); 
+  }
+  98.33% {
+    transform: translateX(11%) translateY(5%) rotate(-5deg); 
+  }
   100% {
     transform: translateX(0%) translateY(0%) rotate(0deg);
   }
-
-  /* 최종 위치 안착 */
 }
 
 @keyframes slide-pause-slide-second {
-
-  /* 0초 ~ 1초: 숨어있음 */
-  0%,
-  12.5% {
+  0%, 10% {
     transform: translateX(110%) rotate(0deg);
   }
-
-  /* 1초 ~ 2초: 4steps로 오른쪽에서 나타나며 Y축으로 무작위 이동 */
-  15.625% {
-    transform: translateX(82.5%) translateY(-5%) rotate(-21deg);
+  11.67% {
+    transform: translateX(88%) translateY(-5%) rotate(-10.5deg); 
   }
-
-  18.75% {
-    transform: translateX(55%) translateY(7%) rotate(27deg);
+  13.33% {
+    transform: translateX(66%) translateY(7%) rotate(13.5deg); 
   }
-
-  21.875% {
-    transform: translateX(27.5%) translateY(-2%) rotate(-12deg);
+  15% {
+    transform: translateX(44%) translateY(-2%) rotate(-6deg); 
   }
-
-  25% {
+  16.67% {
+    transform: translateX(22%) translateY(6%) rotate(9deg); 
+  }
+  18.33% {
+    transform: translateX(11%) translateY(-4%) rotate(-7.5deg); 
+  }
+  20% {
     transform: translateX(0%) translateY(0%) rotate(0deg);
   }
-
-  /* 최종 위치 안착 */
-
-  /* 2초 ~ 3초: 보여짐 */
-  37.5% {
+  20.01%, 30% {
     transform: translateX(0%) rotate(0deg);
   }
-
-  /* 3초 ~ 4초: 4steps로 왼쪽으로 사라지며 Y축으로 무작위 이동 */
-  40.625% {
-    transform: translateX(-27.5%) translateY(6%) rotate(23deg);
+  31.67% {
+    transform: translateX(-22%) translateY(6%) rotate(11.5deg); 
   }
-
-  43.75% {
-    transform: translateX(-55%) translateY(-8%) rotate(-26deg);
+  33.33% {
+    transform: translateX(-44%) translateY(-8%) rotate(-13deg); 
   }
-
-  46.875% {
-    transform: translateX(-82.5%) translateY(4%) rotate(14deg);
+  35% {
+    transform: translateX(-66%) translateY(4%) rotate(7deg); 
   }
-
-  50% {
+  36.67% {
+    transform: translateX(-88%) translateY(2%) rotate(-5.5deg); 
+  }
+  38.33% {
+    transform: translateX(-110%) translateY(-5%) rotate(10deg); 
+  }
+  40% {
     transform: translateX(-110%) translateY(0%) rotate(0deg);
   }
-
-  /* 4초 ~ 8초: 숨긴 상태로 대기 (다음 루프를 위해 오른쪽으로 이동) */
-  100% {
+  40.01%, 100% {
     transform: translateX(110%) rotate(0deg);
   }
 }
 
 @keyframes slide-pause-slide-third {
-
-  /* 0초 ~ 3초: 숨어있음 */
-  0%,
-  37.5% {
+  0%, 30% {
     transform: translateX(110%) rotate(0deg);
   }
-
-  /* 3초 ~ 4초: 4steps로 오른쪽에서 나타나며 Y축으로 무작위 이동 */
-  40.625% {
-    transform: translateX(82.5%) translateY(-6%) rotate(-24deg);
+  31.67% {
+    transform: translateX(88%) translateY(-6%) rotate(-12deg); 
   }
-
-  43.75% {
-    transform: translateX(55%) translateY(8%) rotate(29deg);
+  33.33% {
+    transform: translateX(66%) translateY(8%) rotate(14.5deg); 
   }
-
-  46.875% {
-    transform: translateX(27.5%) translateY(-4%) rotate(-16deg);
+  35% {
+    transform: translateX(44%) translateY(-4%) rotate(-8deg); 
   }
-
-  50% {
+  36.67% {
+    transform: translateX(22%) translateY(5%) rotate(7.5deg); 
+  }
+  38.33% {
+    transform: translateX(11%) translateY(-7%) rotate(-11deg); 
+  }
+  40% {
     transform: translateX(0%) translateY(0%) rotate(0deg);
   }
-
-  /* 최종 위치 안착 */
-
-  /* 4초 ~ 5초: 보여짐 */
-  62.5% {
+  40.01%, 50% {
     transform: translateX(0%) rotate(0deg);
   }
-
-  /* 5초 ~ 6초: 4steps로 왼쪽으로 사라지며 Y축으로 무작위 이동 */
-  65.625% {
-    transform: translateX(-27.5%) translateY(-5%) rotate(-19deg);
+  51.67% {
+    transform: translateX(-22%) translateY(-5%) rotate(-9.5deg); 
   }
-
-  68.75% {
-    transform: translateX(-55%) translateY(7%) rotate(22deg);
+  53.33% {
+    transform: translateX(-44%) translateY(7%) rotate(11deg); 
   }
-
-  71.875% {
-    transform: translateX(-82.5%) translateY(-6%) rotate(-17deg);
+  55% {
+    transform: translateX(-66%) translateY(-6%) rotate(-8.5deg); 
   }
-
-  75% {
+  56.67% {
+    transform: translateX(-88%) translateY(3%) rotate(5deg); 
+  }
+  58.33% {
+    transform: translateX(-110%) translateY(8%) rotate(10.5deg); 
+  }
+  60% {
     transform: translateX(-110%) rotate(0deg);
   }
-
-  /* 6초 ~ 8초: 숨긴 상태로 대기 (다음 루프를 위해 오른쪽으로 이동) */
-  100% {
+  60.01%, 100% {
     transform: translateX(110%) rotate(0deg);
   }
 }
 
 @keyframes slide-pause-slide-fourth {
-
-  /* 0초 ~ 5초: 숨어있음 */
-  0%,
-  62.5% {
+  0%, 50% {
     transform: translateX(110%) rotate(0deg);
   }
-
-  /* 5초 ~ 6초: 4steps로 오른쪽에서 나타나며 Y축으로 무작위 이동 */
-  65.625% {
-    transform: translateX(82.5%) translateY(6%) rotate(18deg);
+  51.67% {
+    transform: translateX(88%) translateY(6%) rotate(9deg); 
   }
-
-  68.75% {
-    transform: translateX(55%) translateY(-2%) rotate(-8deg);
+  53.33% {
+    transform: translateX(66%) translateY(-2%) rotate(-4deg); 
   }
-
-  71.875% {
-    transform: translateX(27.5%) translateY(4%) rotate(16deg);
+  55% {
+    transform: translateX(44%) translateY(4%) rotate(8deg); 
   }
-
-  75% {
+  56.67% {
+    transform: translateX(22%) translateY(9%) rotate(-12.5deg); 
+  }
+  58.33% {
+    transform: translateX(11%) translateY(-3%) rotate(6.5deg); 
+  }
+  60% {
     transform: translateX(0%) translateY(0%) rotate(0deg);
   }
-
-  /* 최종 위치 안착 */
-
-  /* 6초 ~ 7초: 보여짐 */
-  87.5% {
+  60.01%, 70% {
     transform: translateX(0%) rotate(0deg);
   }
-
-  /* 7초 ~ 8초: 4steps로 왼쪽으로 사라지며 Y축으로 무작위 이동 */
-  90.625% {
-    transform: translateX(-27.5%) translateY(-8%) rotate(-29deg);
+  71.67% {
+    transform: translateX(-22%) translateY(-8%) rotate(-14.5deg); 
   }
-
-  93.75% {
-    transform: translateX(-55%) translateY(4%) rotate(17deg);
+  73.33% {
+    transform: translateX(-44%) translateY(4%) rotate(8.5deg); 
   }
-
-  96.875% {
-    transform: translateX(-82.5%) translateY(7%) rotate(-25deg);
+  75% {
+    transform: translateX(-66%) translateY(7%) rotate(-12.5deg); 
   }
+  76.67% {
+    transform: translateX(-88%) translateY(-6%) rotate(9.5deg); 
+  }
+  78.33% {
+    transform: translateX(-110%) translateY(2%) rotate(-5deg); 
+  }
+  80% {
+    transform: translateX(-110%) rotate(0deg);
+  }
+  80.01%, 100% {
+    transform: translateX(110%) rotate(0deg);
+  }
+}
 
+@keyframes slide-pause-slide-fifth {
+  0%, 70% {
+    transform: translateX(110%) rotate(0deg);
+  }
+  71.67% {
+    transform: translateX(88%) translateY(8%) rotate(10deg); 
+  }
+  73.33% {
+    transform: translateX(66%) translateY(-6%) rotate(-7.5deg); 
+  }
+  75% {
+    transform: translateX(44%) translateY(4%) rotate(5deg); 
+  }
+  76.67% {
+    transform: translateX(22%) translateY(-9%) rotate(-14deg); 
+  }
+  78.33% {
+    transform: translateX(11%) translateY(5%) rotate(8deg); 
+  }
+  80% {
+    transform: translateX(0%) translateY(0%) rotate(0deg);
+  }
+  80.01%, 90% {
+    transform: translateX(0%) rotate(0deg);
+  }
+  91.67% {
+    transform: translateX(-22%) translateY(-4%) rotate(-9deg); 
+  }
+  93.33% {
+    transform: translateX(-44%) translateY(9%) rotate(12deg); 
+  }
+  95% {
+    transform: translateX(-66%) translateY(-2%) rotate(-5.5deg); 
+  }
+  96.67% {
+    transform: translateX(-88%) translateY(6%) rotate(8.5deg); 
+  }
+  98.33% {
+    transform: translateX(-110%) translateY(-7%) rotate(-10.5deg); 
+  }
   100% {
     transform: translateX(-110%) rotate(0deg);
   }
