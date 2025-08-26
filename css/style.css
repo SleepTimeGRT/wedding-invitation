@@ -894,11 +894,11 @@
 .wishing-well__contents-text-item-account-container {
   display: flex;
   flex-direction: column;
-  margin-left: 11%;
-  margin-right: 11%;
+  margin: 0 auto;
 }
 
 .wishing-well__contents-text-item-account {
+  margin-left:8px;
   display: flex;
   flex-direction: row;
   gap: 8px;
@@ -912,10 +912,10 @@
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
+  white-space: nowrap;
 }
 
 .copy-btn {
-  margin-left: 8px;
   padding: 8px;
   font-size: 16px;
   cursor: pointer;
